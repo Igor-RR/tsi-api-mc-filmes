@@ -1,0 +1,31 @@
+@url = http://localhost:3000/filmes
+
+###
+GET {{url}}/2
+###
+POST {{url}}
+Content-Type: application/json
+
+{
+    "titulo" : "Planeta dos macacados"
+}
+
+###
+PUT {{url}}/3
+Content-Type: application/json
+
+{
+    "titulo": "planeta dos macacos",
+    "assitido": true
+}
+
+###
+PUT {{url}}/1
+Content-Type: application/json
+
+{
+    "assistido" : false
+}
+
+###
+DELETE {{url}}/2
